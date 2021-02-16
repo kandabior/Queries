@@ -25,10 +25,7 @@ const getByCategory=(category,callback)=>{
     
     let promise=Query(category);
     promise.then(callback).catch((err)=>console.log(err));
-    
 }
-
-
 
 module.exports= getByCategory;
 

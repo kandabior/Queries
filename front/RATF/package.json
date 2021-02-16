@@ -10,9 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-windows": "^0.63.0-0"
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-windows": "^0.63.0-0",
+    "react-navigation": "^4.4.3",
+    "react-navigation-stack": "^2.10.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

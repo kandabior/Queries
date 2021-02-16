@@ -42,8 +42,6 @@ const getByTime=(date,callback)=> {
     promise.then(callback).catch((err)=>console.log(err));
 }
 
-
-
 module.exports =getByTime;
 
 //*********** checks *************

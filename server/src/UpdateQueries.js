@@ -97,7 +97,7 @@ const runAllFunctions=()=>{
     closeDB();
 }
 
-runAllFunctions();
+module.exports.all =runAllFunctions;
 
 
 
