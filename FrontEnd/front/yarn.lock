@@ -1116,6 +1116,11 @@
   "resolved" "https://registry.npmjs.org/@react-native-community/masked-view/-/masked-view-0.1.10.tgz"
   "version" "0.1.10"
 
+"@react-native-picker/picker@^1.9.11":
+  "integrity" "sha512-E7whvvMIl9Ln1sxgug7OAEVWQ69n82iV0d2OWWp5VV52+RW3azKh1IFm4rxdW5/oByMfl7FFL0eHNelGgY4BMQ=="
+  "resolved" "https://registry.npmjs.org/@react-native-picker/picker/-/picker-1.9.11.tgz"
+  "version" "1.9.11"
+
 "@react-native-windows/cli@0.63.9":
   "integrity" "sha512-VnD/lcCW8twqO522AAy/T/FzB3eAGjMmX1I3upXZHTvJScg9j9km+TLhVWB9v//kerWctVT74EMcZoCpZbrtEQ=="
   "resolved" "https://registry.yarnpkg.com/@react-native-windows/cli/-/cli-0.63.9.tgz"
