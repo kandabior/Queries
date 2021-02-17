@@ -1,20 +1,20 @@
 import React from 'react'
 import {View, Text,StyleSheet,Button} from 'react-native'
-import runAllFunctions from '../server/interface/initDB'
 
-const db= require('sqlite3')
 
 const HomeScreen= ({navigation})=>{
     return (<View >
         <View style={styles.viewStyle}>
-            <Button  title={'initilize DB'}/>
+            <Button  title={'Initilize DB'} onPress={()=> navigation.navigate('initDB')}/>
             </View>
         <View style={styles.viewStyle}>
-            <Button title={'navigate to "GetRecordsByCategory" screen '} onPress={()=>navigation.navigate('getByCategory')}/>
+            <Button title={'Get records by time'} onPress={()=>navigation.navigate('getByTime')}/>
         </View>
         <View style={styles.viewStyle}>
-            <Button title={'navigate to "GetRecordsByTime" screen '} onPress={()=>navigation.navigate('getByTime')}/>
+            <Button title={'Get records by category'} onPress={()=>navigation.navigate('getByCategory')}/>
         </View>
+
+        
         
         
     </View>)
@@ -23,7 +23,9 @@ const HomeScreen= ({navigation})=>{
 const styles = StyleSheet.create({
     viewStyle: {
         paddingTop: 10,
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
+        width: 200
+        
         
     }
 });

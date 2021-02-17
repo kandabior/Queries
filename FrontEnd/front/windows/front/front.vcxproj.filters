@@ -60,4 +60,9 @@
   <ItemGroup>
     <Page Include="MainPage.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Feather.ttf">
+      <Filter>Assets</Filter>
+    </Font>
+  </ItemGroup>
 </Project>
