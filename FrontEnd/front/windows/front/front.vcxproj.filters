@@ -64,5 +64,11 @@
     <Font Include="Assets\Feather.ttf">
       <Filter>Assets</Filter>
     </Font>
+    <Font Include="Assets\Ionicons.ttf">
+      <Filter>Assets</Filter>
+    </Font>
+    <Font Include="Assets\FontAwesome.ttf">
+      <Filter>Assets</Filter>
+    </Font>
   </ItemGroup>
 </Project>

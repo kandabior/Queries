@@ -27,7 +27,10 @@ const styles= StyleSheet.create({
         width:200,
         padding:5,
         borderWidth:1,
-        borderColor: 'black',
+        borderColor: '#e9ebec',
+        color: 'black',
+        borderRadius:5
+        
         
     },
     textStyle:{

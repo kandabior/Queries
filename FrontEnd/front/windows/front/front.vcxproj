@@ -173,6 +173,8 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="Assets\Feather.ttf" />
+    <Font Include="Assets\FontAwesome.ttf" />
+    <Font Include="Assets\Ionicons.ttf" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\node_modules\@react-native-picker\picker\windows\ReactNativePicker\ReactNativePicker.vcxproj">

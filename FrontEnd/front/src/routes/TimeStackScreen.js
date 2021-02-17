@@ -1,7 +1,9 @@
 import React from 'react'
 import {createStackNavigator} from '@react-navigation/stack'
+import {useIsDrawerOpen} from '@react-navigation/drawer'
 import getByTime from '../screens/GetByTimeScreen'
 import Feather from 'react-native-vector-icons/Feather'
+import { View } from 'react-native'
 
 const getByTimeStackScreen=({navigation})=>{
     const getByTimeStack= createStackNavigator();
@@ -20,7 +22,7 @@ const getByTimeStackScreen=({navigation})=>{
             },
             headerLeft: ()=>(
               <Feather.Button color={'#e9ebec'} backgroundColor={'#142432'} name='menu' size={30} onPress={()=> navigation.openDrawer()} />
-            )
+              )
           }}/>
     </getByTimeStack.Navigator>
     )

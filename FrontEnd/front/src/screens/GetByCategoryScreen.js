@@ -15,7 +15,7 @@ const getByCategory= ()=>{
     return <View style={styles.ViewStyle}>
             <View style={styles.topLineStyle}></View>
             <Picker
-                    style={{height: 50, width: 200,color:'#e9ebec'}}
+                    style={{height: 50, width: 200,color:'black',fontSize:20,backgroundColor:'#e9ebec'}}
                     selectedValue={state.category}
                     onValueChange={(value, index)=>setState({category:value})}>
                 {categoryItems}
