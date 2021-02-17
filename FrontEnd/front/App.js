@@ -14,7 +14,7 @@ export default function App(){
 
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName='getByTime' 
+      <Drawer.Navigator 
                         drawerType={dimensions.width >= 480 ? 'permanent' : 'front'}
                         drawerStyle={{backgroundColor:'#445060',
                                       width:200}}

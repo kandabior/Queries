@@ -13,19 +13,34 @@ const getByCategory= ()=>{
         return <Picker.Item label={cat.value} value={cat.value}/>
     })
     return <View style={styles.ViewStyle}>
+            <View style={styles.topLineStyle}></View>
             <Picker
-                    style={{height: 50, width: 200}}
+                    style={{height: 50, width: 200,color:'#e9ebec'}}
                     selectedValue={state.category}
                     onValueChange={(value, index)=>setState({category:value})}>
                 {categoryItems}
             </Picker>
-            <Text>Search events of category: {state.category}</Text>
+            <Text style={styles.textStyle}>Search events of category: {state.category}</Text>
         </View>
 };
 
 const styles= StyleSheet.create({
     ViewStyle: {
-        padding: 5
+        padding: 5,
+        backgroundColor:'#142432',
+        flex:1
+        
+    },
+    textStyle:{
+        paddingTop:10,
+        color:'#e9ebec',
+        fontWeight: 'bold',
+        fontSize: 20
+    },
+    topLineStyle:{
+        borderTopWidth:2,
+        borderColor: '#29a6dd',
+        paddingBottom:5
     }
 });
 

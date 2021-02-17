@@ -10,8 +10,16 @@ const getByTimeStackScreen=({navigation})=>{
       <getByTimeStack.Screen name='getByTime' component={getByTime}
           options={{
             title: 'Get By Time',
+            headerStyle:{
+              backgroundColor:'#142432',
+              
+            },
+            headerTintColor: '#e9ebec',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
             headerLeft: ()=>(
-              <Feather.Button name='menu'  color={'black'} backgroundColor={'white'} size={30} onPress={()=> navigation.openDrawer()} />
+              <Feather.Button color={'#e9ebec'} backgroundColor={'#142432'} name='menu' size={30} onPress={()=> navigation.openDrawer()} />
             )
           }}/>
     </getByTimeStack.Navigator>
