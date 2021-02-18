@@ -2,9 +2,9 @@
 import React from 'react'
 import {useWindowDimensions} from 'react-native'
 import { createDrawerNavigator} from '@react-navigation/drawer'
-import { NavigationContainer } from '@react-navigation/native';
 import getByCategoryStackScreen from './CategoryStackScreen'
 import getByTimeStackScreen from './TimeStackScreen'
+import VideoLibraryStackScreen from './VideoPlayerStackScreen'
 
 const Drawer= createDrawerNavigator();
 
@@ -23,6 +23,7 @@ export default function Playback(){
                                                inactiveTintColor:'#c9ccd1' }} >
         <Drawer.Screen name='By Category' component={getByCategoryStackScreen}/>
         <Drawer.Screen name='By Time' component={getByTimeStackScreen}/>
+        <Drawer.Screen name='Library' component={VideoLibraryStackScreen}/>
       </Drawer.Navigator>
     
   )
