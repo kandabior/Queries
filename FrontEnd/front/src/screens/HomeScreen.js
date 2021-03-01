@@ -1,53 +1,47 @@
 import React from 'react'
-import {View, Text,StyleSheet,TouchableOpacity} from 'react-native'
+import {View, Text,StyleSheet,TouchableOpacity, FlatList} from 'react-native'
 import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
+import HomeButton from '../components/HomeButton'
 
-const HomeScreen =({navigation})=>{
+const buttons=[
+    {
+        name: 'Payback',
+        destination: 'Playback',
+        Icon: <FontAwesome name='play' size={80} style={{color:'#5fc6f0',paddingLeft:20,paddingTop:6 }}/>
+    },
+    {
+        name: 'Live View',
+        destination: 'Live',
+        Icon :<FontAwesome name='tv' size={70} style={{color:'#5fc6f0',paddingLeft:9,paddingTop:15 }}/>
+    }
+];
+
+const HomeScreen =()=>{
     return(
         <View style={styles.ViewStyle}>
             <View style={styles.topLineStyle}></View>
-            <View style={{padding:30}}>
-                <TouchableOpacity style={styles.buttonStyle} onPress={()=>{navigation.navigate('Playback')}}>
-                    <FontAwesome name='play' size={80} style={{color:'#5fc6f0',paddingLeft:20,paddingTop:6 }}/>
-                </TouchableOpacity> 
-                <Text style={styles.titleStyle}>Playback</Text>   
-            </View>
-            
+            <FlatList 
+                horizontal={true}
+                data={buttons}
+                keyExtractor={item=>item.name}
+                renderItem={({item})=>{
+                    return <HomeButton destination={item.destination} Icon={item.Icon} name={item.name}/>
+                }}/>
         </View>
     )
 }
 
 const styles=StyleSheet.create({
-    buttonStyle:{
-        width: 95,
-        height: 95,
-        borderWidth:1,
-        borderColor: 'black',
-        borderRadius: 50,
-        backgroundColor:'#2b4053',    
-        borderColor: '#e9ebec'
-
-    },
     ViewStyle:{
         backgroundColor:'#142432',
         flex: 1
-
-    },
-    titleStyle:{
-        color: '#e9ebec',
-        paddingLeft: 7,
-        fontSize: 22,
-        // fontWeight: 'bold'
-        
     },
     topLineStyle:{
         borderTopWidth:2,
         borderColor: '#29a6dd',
         paddingBottom:5
     }
-   
-
 });
 
 export default HomeScreen;

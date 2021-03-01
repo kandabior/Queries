@@ -1,28 +1,20 @@
 import React,{useState} from 'react'
 import {View, Text,StyleSheet,TextInput} from 'react-native'
-import { color } from 'react-native-reanimated';
-
+import DefaultScreen from './DefaultScreen'
 const getByTime= ()=>{
     const [time,setInput] =useState("");
 
-    return <View style={styles.ViewStyle}>
-        <View style={styles.topLineStyle}></View>
+    return <DefaultScreen>
         <Text style={styles.textStyle}>Insert time to search</Text>
         <TextInput 
             style={styles.textInputStyle}
             value={time}
             onChangeText={(text)=>setInput(text)}/>
         <Text style={styles.textStyle}>Search for records at time: {time}</Text>
-    </View>
+    </DefaultScreen>
 };
 
 const styles= StyleSheet.create({
-    ViewStyle: {
-        padding: 5,
-        backgroundColor:'#142432',
-        flex:1
-        
-    },
     textInputStyle:{
         width:200,
         padding:5,
@@ -30,8 +22,6 @@ const styles= StyleSheet.create({
         borderColor: '#e9ebec',
         color: 'black',
         borderRadius:5
-        
-        
     },
     textStyle:{
         paddingTop:10,
@@ -39,10 +29,6 @@ const styles= StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20
     },
-    topLineStyle:{
-        borderTopWidth:2,
-        borderColor: '#29a6dd',
-        paddingBottom:5
-    }});
+});
 
 export default getByTime;

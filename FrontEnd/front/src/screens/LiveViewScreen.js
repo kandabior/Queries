@@ -1,10 +1,9 @@
 import React from 'react'
-import {View ,Text,StyleSheet} from 'react-native'
-import Video from 'react-native-video'
+import {View,Text, StyleSheet} from 'react-native'
 import DefaultScreen from './DefaultScreen'
-
-
-const VideoLibraryScreen= ()=> {
+import Video from 'react-native-video'
+ 
+const LiveView=()=>{
     return <DefaultScreen>
         <View style={styles.videoViewStyle}>
             <Video 
@@ -18,11 +17,10 @@ const VideoLibraryScreen= ()=> {
     </DefaultScreen>
 };
 
-const styles= StyleSheet.create({
-  
+const styles=StyleSheet.create({
     VideoStyle:{
-        width: 400,
-        height: 300,
+        width: 600,
+        height: 500,
         flex:1
         
     },
@@ -35,4 +33,4 @@ const styles= StyleSheet.create({
     }
 });
 
-export default VideoLibraryScreen;
+export default LiveView;
