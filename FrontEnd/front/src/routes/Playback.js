@@ -2,27 +2,9 @@
 import React from 'react'
 import {useWindowDimensions,FlatList} from 'react-native'
 import { createDrawerNavigator} from '@react-navigation/drawer'
-import getByCategoryStackScreen from './CategoryStackScreen'
-import getByTimeStackScreen from './TimeStackScreen'
-import VideoLibraryStackScreen from './VideoPlayerStackScreen'
+import tags from '../lists/PlaybackTagsList'
 
 const Drawer= createDrawerNavigator();
-
-const tags=[
-  {
-    name: 'By Category',
-    component: getByCategoryStackScreen
-  },
-  {
-    name: 'By Time',
-    component: getByTimeStackScreen
-  },
-  {
-    name: 'Library',
-    component: VideoLibraryStackScreen
-  },
-
-];
 
 export default function Playback(){
   const dimensions= useWindowDimensions();
