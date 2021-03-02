@@ -18,7 +18,7 @@ export default function Playback(){
                                                activeTintColor:'white',
                                                inactiveTintColor:'#c9ccd1' }} >
         {tags.map((item)=>{
-          return <Drawer.Screen name={item.name} component={item.component}/>       
+          return <Drawer.Screen key={item.name} name={item.name} component={item.component}/>       
         })}
       </Drawer.Navigator>
     

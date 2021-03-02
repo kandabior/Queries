@@ -26,7 +26,6 @@ const mainScreens=[
     name: 'Live',
     component: LiveViewScreen
   }
-
 ];
 
 export default function App(){
@@ -34,6 +33,7 @@ export default function App(){
     <mainStack.Navigator >
       {mainScreens.map((item)=>{
         return <mainStack.Screen 
+          key={item.name}
           options={{
             headerStyle: {
               backgroundColor: 'black',

@@ -11,7 +11,7 @@ const categories= [
 const getByCategory= ()=>{
     const [state,setState] =useState({category: 'Arrest'})
     const categoryItems= categories.map((cat)=> {
-        return <Picker.Item label={cat.value} value={cat.value}/>
+        return <Picker.Item key={cat.key} label={cat.value} value={cat.value}/>
     })
     return <DefaultScreen>
         <Picker

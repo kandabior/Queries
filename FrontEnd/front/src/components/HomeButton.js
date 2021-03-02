@@ -6,7 +6,7 @@ const HomeButton=({destination, Icon, name})=>{
     const navigation=useNavigation();
     return (
     <View style={{padding:30}}>
-        <TouchableOpacity style={styles.buttonStyle} onPress={()=>{navigation.navigate(destination)}}>
+        <TouchableOpacity style={styles.buttonStyle} onPress={()=>{navigation.navigate(destination,{url:'../../assets/sample.mp4'})}}>
             {Icon}
         </TouchableOpacity> 
         <Text style={styles.titleStyle}>{name}</Text>   
@@ -28,9 +28,7 @@ const styles= StyleSheet.create({
     titleStyle:{
         color: '#e9ebec',
         paddingLeft: 7,
-        fontSize: 22,
-        // fontWeight: 'bold'
-        
+        fontSize: 22,        
     },
 });
 
